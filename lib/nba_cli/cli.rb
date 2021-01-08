@@ -46,6 +46,15 @@ class CLI
             menu
         end
 
+        def team_selection
+            puts "Select a team for more detail"
+            selection = user_input
+            team = NBA.find_team(selection)
+            team_detail(team)
+        end
+
+        
+
         def menu
             selection = user_input
             if selection == 'y'
