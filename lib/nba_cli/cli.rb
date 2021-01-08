@@ -8,4 +8,18 @@ class CLI
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         API.get_data
         greet(user_input)
+        end
+    
+    
+        def menu
+            selection = user_input
+            if selection == 'y'
+                teams_list
+                menu
+            elsif selection == 'exit'
+                goodbye
+            else
+                invalid 
+            end
+        end
     end 
