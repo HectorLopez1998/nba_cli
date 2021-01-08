@@ -29,6 +29,10 @@ class CLI
             menu
         end
 
+        def goodbye
+            puts "I hope to see you again soon!"
+        end
+
         def menu
             selection = user_input
             if selection == 'y'
