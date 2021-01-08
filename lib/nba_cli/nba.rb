@@ -1,5 +1,5 @@
 
 
-class nba
+class NBA
 
 end
