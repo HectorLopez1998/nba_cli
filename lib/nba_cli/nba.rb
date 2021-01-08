@@ -3,7 +3,7 @@
 
 class NBA
     @@all = []
-    attr_accessor :full_name, :abbreviation, :city, :division
+    attr_accessor :full_name, :name, :abbreviation, :city, :division
 
     def initialize(teams_hash)
         teams_hash.each do |k, v|
