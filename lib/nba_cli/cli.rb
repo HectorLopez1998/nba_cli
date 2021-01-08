@@ -19,6 +19,10 @@ class CLI
                 end
         end
 
+        def user_input
+            gets.strip
+        end
+
         def menu
             selection = user_input
             if selection == 'y'
