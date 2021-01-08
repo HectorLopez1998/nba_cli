@@ -54,7 +54,7 @@ class CLI
         end
 
         def team_detail(team)
-            puts "Full_ame: #{team.full_name}"
+            puts "Full_name: #{team.full_name}"
             puts "Abbreviation: #{team.abbreviation}"
             puts "City: #{team.city}"
             puts "Division: #{team.division}"
