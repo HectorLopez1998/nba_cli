@@ -54,11 +54,13 @@ class CLI
         end
 
         def team_detail(team)
+            puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
             puts "Full_name: #{team.full_name}"
             puts "Abbreviation: #{team.abbreviation}"
             puts "City: #{team.city}"
             puts "Division: #{team.division}"
-            puts "Input 'y' to see the list, 'exit' to decline" 
+            puts "Input 'y' to see the list, 'exit' to decline"
+            puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" 
             menu
         end        
 
