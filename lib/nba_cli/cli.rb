@@ -10,7 +10,15 @@ class CLI
         greet(user_input)
         end
     
-    
+        def joke
+            selection = user_input
+                if selection == "y"
+                    puts "Cool! I knew we would get alone."
+                else 
+                    puts "Well, now you do!"
+                end
+        end
+
         def menu
             selection = user_input
             if selection == 'y'
