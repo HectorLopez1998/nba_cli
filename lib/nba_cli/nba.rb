@@ -19,4 +19,10 @@ class NBA
         @@all
     end
 
+    def self.find_team(team_name)
+        self.all.find do |team|
+            team.name == team_name 
+        end
+    end
+
 end
