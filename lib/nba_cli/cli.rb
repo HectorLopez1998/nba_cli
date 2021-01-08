@@ -3,6 +3,7 @@ class CLI
     def start
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         puts "Hello there, do you like the NBA?" 
+        puts "y or n"
          joke
         puts "May I have your name?"
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
