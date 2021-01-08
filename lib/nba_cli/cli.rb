@@ -33,6 +33,11 @@ class CLI
             puts "I hope to see you again soon!"
         end
 
+        def invalid 
+            puts "Hmm, that doesn't seem right, please try again."
+            menu
+        end
+
         def menu
             selection = user_input
             if selection == 'y'
