@@ -29,6 +29,14 @@ class CLI
             menu
         end
 
+        def teams_list
+            NBA.all.each.with_index(1) do |team, i|
+                puts "#{i}. #{team.name}"
+            end
+            team_selection
+            
+        end
+
         def goodbye
             puts "I hope to see you again soon!"
         end
