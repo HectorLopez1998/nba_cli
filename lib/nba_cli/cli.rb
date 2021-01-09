@@ -44,14 +44,18 @@ class CLI
 
         def invalid 
             puts "Hmm, that doesn't seem right, please try again."
-            menu
         end
 
         def team_selection
             puts "Select a team for more detail"
-            selection = user_input
+            selection = user_input.capitalize
             team = NBA.find_team(selection)
-            team_detail(team)
+            if team
+                team_detail(team)
+            else
+                invalid
+                team_selection
+            end 
         end
 
         def team_detail(team)
@@ -74,6 +78,7 @@ class CLI
                 goodbye
             else
                 invalid 
+                menu
             end
         end
     end 
